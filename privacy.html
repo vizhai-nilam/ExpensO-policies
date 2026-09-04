@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ExpensO</title>
+<meta name="description" content="Privacy Policy for ExpensO - The Expense Organiser: what data the app handles, where it lives, and your choices.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">eO</span> ExpensO Legal</a>
+    <nav class="docs">
+      <a href="privacy.html" class="active">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="data-deletion.html">Data Deletion</a>
+      <a href="disclosures.html">First-run Disclosures</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="meta">
+    <strong>App:</strong> ExpensO - The Expense Organiser &nbsp;·&nbsp;
+    <strong>Publisher:</strong> the developer of ExpensO (an individual developer based in India) &nbsp;·&nbsp;
+    <strong>Policy version:</strong> 2 &nbsp;·&nbsp;
+    <strong>Effective:</strong> 2026-09-02
+  </p>
+
+  <p>This Privacy Policy explains what data ExpensO handles, where it lives, and the
+  choices you have. ExpensO is an offline-first, end-to-end-encrypted personal
+  finance app: your financial data stays on your device. The <strong>free version is
+  ad-supported</strong> (Google AdMob); a <strong>one-time "ExpensO Full" purchase removes all
+  ads</strong>. Ads only run after you agree through the Google consent prompt, and the
+  ad software is never even started for ExpensO Full owners.</p>
+
+  <h2>1. Summary</h2>
+  <ul>
+    <li>Your <strong>financial data</strong> (transactions, balances, budgets, attachments, …) is
+      stored <strong>only on your device</strong>, in a database <strong>encrypted at rest</strong> (SQLCipher,
+      AES-256). There is <strong>no ExpensO server</strong>; the developer never receives it.</li>
+    <li>ExpensO contains <strong>no first-party analytics, no telemetry, and no
+      crash-reporting SDK</strong> for the developer.</li>
+    <li>On the <strong>free tier</strong>, ExpensO shows ads via <strong>Google AdMob</strong>. For ads, Google
+      (and its ad partners) may process your <strong>advertising ID</strong>, <strong>IP address</strong>
+      (from which a <strong>coarse, city-level location</strong> is inferred), device and app
+      info, and <strong>ad-interaction events</strong>. This happens <strong>only</strong> where the Google
+      <strong>User Messaging Platform (UMP)</strong> consent flow permits it, and on iOS only if
+      you also allow tracking in the system prompt.</li>
+    <li><strong>ExpensO Full</strong> (a one-time purchase) <strong>removes every ad</strong>: the ad SDK is not
+      initialised, no advertising ID is read, and no ad request or ad telemetry
+      leaves your device.</li>
+    <li>The store (Google Play / Apple App Store) processes your purchase; the
+      developer receives only anonymised/aggregated payout and tax reporting from
+      the store, never your payment details.</li>
+    <li>Other ways data can leave your device are features <strong>you turn on</strong>: encrypted
+      cloud sync to <em>your own</em> Google Drive app folder (ciphertext only),
+      peer-to-peer sync between <em>your</em> devices (ciphertext only), and an optional
+      exchange-rate lookup.</li>
+    <li>You can <strong>export</strong> all your data and <strong>erase</strong> everything (including keys) from
+      inside the app, and change your ad-consent choices at any time.</li>
+  </ul>
+
+  <h2>2. Who is responsible for your data</h2>
+  <p>For data that stays on your device, the individual developer identified above is
+  the nominal <strong>data controller / data fiduciary</strong>, but because ExpensO has no
+  backend, <strong>you</strong> are effectively in sole control and the developer cannot
+  access, restore, or delete it.</p>
+  <p>For <strong>advertising</strong> data processed through AdMob, <strong>Google Ireland Limited /
+  Google LLC</strong> acts as an independent controller (and, in some regions, as the
+  developer's processor) under <strong>Google's own privacy policy</strong>
+  (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>) and the AdMob/Google Ads data terms. A
+  list of Google's advertising technology providers is at
+  <a href="https://support.google.com/admob/answer/9012903">support.google.com/admob/answer/9012903</a>.</p>
+
+  <h2>3. What data ExpensO processes, and where</h2>
+
+  <h3>3.1 Data you enter (stays on device)</h3>
+  <p>Transactions, amounts, dates, payees, notes, categories, tags, accounts and the
+  last four digits of an account label (full card/account numbers are rejected on
+  entry), budgets, savings goals, recurring rules, bill reminders, attached
+  receipt images, and app settings.</p>
+  <ul>
+    <li><strong>Storage:</strong> a local SQLCipher-encrypted database and an encrypted attachment
+      vault in the app's private storage.</li>
+    <li><strong>Retention:</strong> until you delete the entry or erase the app data. Uninstalling
+      removes it.</li>
+    <li><strong>The developer's access:</strong> none. <strong>Advertising's access:</strong> none — no entry,
+      amount, balance, category or attachment is ever sent to any ad system.</li>
+  </ul>
+
+  <h3>3.2 Advertising (free tier only — Google AdMob)</h3>
+  <p>When you are <strong>not</strong> an ExpensO Full owner, ads are shown by the <strong>Google Mobile
+  Ads (AdMob)</strong> SDK. Subject to your consent (section 3.3):</p>
+  <ul>
+    <li><strong>Advertising identifier</strong> — Android Advertising ID (GAID) / iOS IDFA (the
+      latter only if you allow tracking). Used to select and cap ads and to measure
+      ad performance. You can reset or delete it in your device settings.</li>
+    <li><strong>IP address</strong> — seen by Google's ad servers on every ad request; used for
+      ad delivery, fraud/invalid-traffic prevention, and to infer an approximate
+      (city-level) <strong>coarse location</strong>. ExpensO does <strong>not</strong> request GPS/precise
+      location and holds no location permission.</li>
+    <li><strong>Device &amp; app information</strong> — device model, OS version, language, coarse
+      screen metrics, the ExpensO app id and version, and general connection type.</li>
+    <li><strong>Ad-interaction events</strong> — ad impressions, clicks, viewability and (for
+      install-attribution) SKAdNetwork/limited signals on iOS.</li>
+    <li><strong>No financial data.</strong> The ad SDK receives none of your ledger content.</li>
+  </ul>
+  <p>Legal bases: <strong>consent</strong> (GDPR Art. 6(1)(a); ePrivacy) where the UMP form asks
+  for it; a US-state "<strong>Do Not Sell or Share / opt out of targeted advertising</strong>"
+  signal is offered where applicable; <strong>DPDP Act 2023</strong> — consent for a lawful
+  purpose. Ads may be <strong>personalised</strong> (if you consent) or <strong>non-personalised /
+  contextual</strong> (if you decline where a decline option is offered).</p>
+  <p><strong>ExpensO Full owners:</strong> the ad SDK is <strong>not initialised at all</strong>. No
+  advertising ID is accessed, no ad request is made, and nothing ad-related leaves
+  the device.</p>
+
+  <h3>3.3 Ad consent — Google UMP and Apple ATT</h3>
+  <p>Before any ad loads, ExpensO runs the <strong>Google User Messaging Platform (UMP)</strong>
+  consent flow:</p>
+  <ul>
+    <li>In the <strong>EEA, UK and Switzerland</strong>, a GDPR/ePrivacy consent message asks you to
+      consent or manage options (purposes and vendors) before personalised — and, in
+      most configurations, any — ads are requested.</li>
+    <li>Where applicable in the <strong>United States</strong>, a CCPA/CPRA message provides a
+      "<strong>Do Not Sell or Share My Personal Information</strong>" choice.</li>
+    <li>Elsewhere, a message may still be shown depending on local rules.</li>
+  </ul>
+  <p>Your choices are stored <strong>on your device</strong> by the UMP SDK. You can reopen the
+  form any time from <strong>Settings → "Ad privacy choices"</strong> (shown where UMP requires
+  it). On <strong>iOS 14.5+</strong>, after the UMP step ExpensO also shows Apple's <strong>App
+  Tracking Transparency</strong> prompt; if you deny it, the advertising identifier is
+  not used and ads are non-personalised.</p>
+
+  <h3>3.4 In-app purchase ("ExpensO Full")</h3>
+  <p>"ExpensO Full" is a <strong>one-time, non-consumable</strong> purchase processed by <strong>Google
+  Play Billing</strong> or the <strong>Apple App Store</strong>. The store handles your payment,
+  billing address and taxes under <strong>its own</strong> privacy policy and terms; ExpensO
+  never sees or stores your card or payment details. ExpensO stores a single
+  local flag ("purchased: yes/no"), on-device only, not synced. The developer
+  receives only the store's standard aggregated sales, payout and tax reports.
+  Restore-purchases re-checks your entitlement with the store.</p>
+
+  <h3>3.5 Google account data (only if you enable cloud sync)</h3>
+  <p>If — and only if — you sign in with Google and grant the in-app cloud-sync
+  consent:</p>
+  <ul>
+    <li><strong>Email address:</strong> used solely to bind the encrypted sync files to your
+      account and to show which account is connected.</li>
+    <li><strong>OAuth scope:</strong> <code>drive.appdata</code> only — a private app-data folder in <em>your</em>
+      Drive that other apps cannot see. ExpensO cannot see the rest of your Drive.</li>
+    <li><strong>What is uploaded:</strong> an append-only log of <strong>encrypted</strong> change records
+      (XChaCha20-Poly1305). Google stores ciphertext; neither Google (readably) nor
+      the developer can decrypt it.</li>
+    <li><strong>Legal basis:</strong> your consent. Withdraw it in Settings; revoke Drive access at
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h3>3.6 Peer-to-peer sync data (only if you use Wi-Fi sync)</h3>
+  <p>ExpensO advertises the device over mDNS on your local network and exchanges
+  <strong>encrypted</strong> change records over a direct socket with devices you paired by QR
+  code. Payload is ciphertext; an on-network observer sees only timing, size and
+  mDNS presence. Nothing is sent to the internet.</p>
+
+  <h3>3.7 Exchange rates (optional, off by default)</h3>
+  <p>If you enable online exchange-rate refresh and grant the <code>fx_fetch</code> consent,
+  ExpensO requests <strong>public, non-personal</strong> currency rates over HTTPS. The request
+  contains no account data and no identifiers beyond the IP address any HTTPS
+  request exposes.</p>
+
+  <h3>3.8 Local notifications</h3>
+  <p>Bill and recurring-transaction reminders are scheduled <strong>on the device</strong> by the
+  operating system. No notification content is sent anywhere.</p>
+
+  <h2>4. What ExpensO does NOT do</h2>
+  <ul>
+    <li>No <strong>first-party</strong> analytics, usage tracking, or telemetry for the developer.</li>
+    <li>No third-party crash/performance reporting.</li>
+    <li>The ad SDK never receives your transactions, balances, categories, notes or
+      attachments.</li>
+    <li>No <strong>sale of personal data for money</strong>. Where a US state defines "<strong>sharing</strong>"
+      for cross-context behavioural advertising, that occurs <strong>only with your
+      consent</strong> and you can opt out via the UMP form.</li>
+    <li>No precise/GPS location; no contacts, SMS, call log or health data.</li>
+    <li>No profiling or automated decision-making with legal or similarly significant
+      effects.</li>
+  </ul>
+
+  <h2>5. Permissions and why</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Internet / network state</td><td>Ads (free tier); cloud sync to your Drive; optional exchange rates; store billing.</td></tr>
+    <tr><td><code>AD_ID</code> (Android advertising ID)</td><td>Serve and frequency-cap ads and measure ad performance on the free tier. Not accessed for ExpensO Full.</td></tr>
+    <tr><td>Local network / multicast (Wi-Fi)</td><td>Discover your other devices for peer-to-peer sync.</td></tr>
+    <tr><td>Camera</td><td>Scan the pairing QR code and capture receipt images (encrypted immediately; nothing uploaded).</td></tr>
+    <tr><td>Biometric / device credential</td><td>Unlock the app and confirm high-value actions (export, erase).</td></tr>
+    <tr><td>Notifications</td><td>Show bill and recurring-transaction reminders.</td></tr>
+    <tr><td>Schedule alarms / run at boot</td><td>Fire reminders on time and re-register them after a restart.</td></tr>
+    <tr><td>Billing</td><td>Process the one-time "ExpensO Full" purchase.</td></tr>
+  </table>
+
+  <h2>6. Data sharing and international transfers</h2>
+  <p>The developer does not sell or share your ledger data with anyone.</p>
+  <ul>
+    <li><strong>Advertising:</strong> ad data is processed by <strong>Google</strong> and its ad-technology
+      partners, on Google infrastructure that may be <strong>outside your country</strong>.
+      Transfers rely on Google's <strong>Standard Contractual Clauses</strong> and equivalent
+      safeguards. See Google's privacy policy and the AdMob partner list linked in
+      section 2.</li>
+    <li><strong>Purchases:</strong> processed by <strong>Google</strong> / <strong>Apple</strong> under their terms.</li>
+    <li><strong>Cloud sync (if enabled):</strong> <em>you</em> transfer <strong>ciphertext</strong> to <em>your</em> Google
+      account; the content is end-to-end encrypted, so no readable personal data is
+      exposed to Google or the developer.</li>
+  </ul>
+
+  <h2>7. Children</h2>
+  <p>ExpensO is a general-audience finance tool, <strong>not directed to children</strong>. AdMob
+  is configured with <code>tagForChildDirectedTreatment</code> <strong>not set to child-directed</strong>
+  and a <strong>maximum ad content rating of "G"</strong>. The app does not knowingly process
+  data of children under 13 (or the minimum digital-consent age in your
+  jurisdiction). If you believe a child has used the app, erase the data from
+  Settings and contact the developer.</p>
+
+  <h2>8. Security</h2>
+  <ul>
+    <li>Database encrypted at rest with SQLCipher (AES-256); attachments in a separate
+      encrypted vault. Keys held in the Android Keystore / iOS Keychain.</li>
+    <li>App content excluded from OS auto-backup and the app-switcher preview
+      (<code>FLAG_SECURE</code> / resign blur).</li>
+    <li>Sync payloads use authenticated encryption; peers are fingerprint-verified.</li>
+    <li>No transport is perfectly private: sync and ad requests reveal metadata
+      (timing, sizes, IP, which devices are online).</li>
+    <li>Keeping backups is your responsibility; the developer cannot restore lost data
+      or keys.</li>
+  </ul>
+
+  <h2>9. Your rights and choices</h2>
+
+  <h3>9.1 Everyone</h3>
+  <ul>
+    <li><strong>Turn ads off entirely:</strong> buy <strong>ExpensO Full</strong> (Settings → ExpensO Full).</li>
+    <li><strong>Change ad consent:</strong> Settings → "Ad privacy choices" (where shown); on iOS,
+      Settings → Privacy &amp; Security → Tracking.</li>
+    <li><strong>Reset the advertising ID:</strong> your device settings.</li>
+    <li><strong>Access / correct</strong> any entry in the app; <strong>export</strong> everything (Settings →
+      Export); <strong>erase</strong> everything and the keys (Settings → Erase everything —
+      see the <a href="data-deletion.html">Data Deletion</a> page; this also clears your stored ad-consent choices);
+      <strong>withdraw</strong> cloud-sync / FX consent via the Settings toggles.</li>
+  </ul>
+
+  <h3>9.2 EEA / UK / Switzerland (GDPR, UK GDPR, Swiss FADP)</h3>
+  <p>Lawful bases: contract/legitimate interests for on-device app functionality;
+  <strong>consent</strong> for advertising and for cloud sync/FX. You have the rights of
+  <strong>access, rectification, erasure, restriction, portability, and objection</strong>
+  (including objection to direct marketing / profiling), and the right to
+  <strong>withdraw consent</strong> at any time without affecting prior processing. You may
+  lodge a complaint with your <strong>supervisory authority</strong>. As a sole developer
+  established in India with EEA/UK users, the developer relies on Google's
+  advertising SCCs for transfers; contact the developer for any Art. 27
+  representative query.</p>
+
+  <h3>9.3 United States (CCPA/CPRA and other state laws — VA, CO, CT, UT, TX, OR, MT, and others)</h3>
+  <p>The developer does <strong>not sell</strong> personal information for money. Behavioural
+  advertising via AdMob may be treated as "<strong>sharing</strong>" / "targeted advertising";
+  you can opt out through the <strong>UMP "Do Not Sell or Share"</strong> message, the iOS ATT
+  prompt, or by buying ExpensO Full. You may request to <strong>know, delete,</strong> and
+  <strong>correct</strong>; you will not be discriminated against for exercising a right.
+  Global Privacy Control signals, where the platform surfaces them, are honoured
+  by the UMP framework.</p>
+
+  <h3>9.4 India (DPDP Act 2023)</h3>
+  <p>Processing is on the basis of your <strong>consent</strong> for a lawful purpose (advertising,
+  cloud sync, FX) or as necessary to provide the app. You may withdraw consent,
+  seek correction/erasure, and nominate a person to exercise rights on your
+  behalf. Grievances: contact the developer (details in Settings → Legal); if
+  unresolved, you may approach the Data Protection Board of India.</p>
+
+  <h3>9.5 Other regions</h3>
+  <p><strong>Brazil (LGPD):</strong> rights of confirmation, access, correction, anonymisation,
+  portability, deletion, and information about sharing; legal basis is consent for
+  advertising. <strong>Canada (PIPEDA / Québec Law 25):</strong> consent-based; access and
+  correction rights; the developer is accountable for transfers to Google.
+  <strong>Australia (Privacy Act / APPs):</strong> access and correction; APP 7 direct-marketing
+  opt-out via the UMP form. <strong>South Korea (PIPA):</strong> consent for advertising data;
+  withdrawal and access rights. Residents of any other jurisdiction retain
+  whatever rights local law grants and may contact the developer to exercise them.</p>
+
+  <h2>10. Retention</h2>
+  <p>On-device data: until you delete it or uninstall. Ad-consent choices: until you
+  change them or clear app data. Purchase entitlement flag: until you erase app
+  data (your store account retains the purchase). Advertising data held by Google
+  is retained under <strong>Google's</strong> retention policies.</p>
+
+  <h2>11. Contact</h2>
+  <p>Developer contact details are in the app under <strong>Settings → Legal</strong>. For
+  advertising data held by Google, use Google's privacy tools and the links in
+  section 2.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If this policy changes materially, the in-app version number is incremented and
+  the acceptance screen is shown again so you can review it before continuing. The
+  current text is always available under Settings → Legal, and this page is
+  updated to match.</p>
+
+  <footer class="site">
+    <p>&larr; <a href="index.html">Back to ExpensO Legal</a></p>
+  </footer>
+</div>
+</body>
+</html>
