@@ -190,7 +190,12 @@ header.site .bar {
 }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 36px; } }
 
-.hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.2rem); line-height: 1.12; margin: 14px 0 18px; }
+.hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.2rem); line-height: 1.12; margin: 0 0 18px; max-width: 18ch; }
+.hero .hero-sub {
+  font-family: var(--serif); font-weight: 500; color: var(--ink-dim);
+  font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.4; max-width: 42ch;
+  margin: 0 0 16px;
+}
 .hero .lede { font-size: 1.12rem; max-width: 46ch; }
 
 /* One consistent pill treatment for every hero action/claim — two links,
@@ -248,6 +253,13 @@ section.no-border { border-top: none; }
 .trust-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
 .trust-card p { font-size: 0.94rem; }
 .trust-link { display: inline-block; margin-top: 26px; font-size: 0.95rem; font-weight: 600; }
+
+.solution-callout {
+  margin-top: 28px; padding: 24px 26px; border-radius: var(--radius-md);
+  background: var(--accent-soft); border: 1px solid var(--border-strong);
+}
+.solution-callout p { color: var(--ink); font-size: 1rem; margin: 0; }
+.solution-callout strong { color: var(--accent); }
 
 /* ----------------------------------------------------------- feature acc */
 .feature {
