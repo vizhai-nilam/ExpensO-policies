@@ -3,64 +3,584 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ExpensO Legal — Privacy, Terms &amp; Data Deletion</title>
-<meta name="description" content="Privacy Policy, Terms &amp; Conditions, and Data Deletion instructions for ExpensO - The Expense Organiser.">
-<link rel="stylesheet" href="style.css">
+<title>ExpensO — the offline, encrypted expense tracker built for how India spends</title>
+<meta name="description" content="ExpensO is a budgeting and expense-tracking app that runs entirely on your phone — no servers, no analytics, no subscription. Lakhs and crores natively, EMIs and EB bills as real categories, envelope budgets, nine report types, and a one-time purchase to remove ads.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ExpensO — the offline, encrypted expense tracker built for India">
+<meta property="og:description" content="Know exactly where your money goes, without handing it to anyone else. No servers, no analytics, no subscription.">
+<meta property="og:image" content="images/dashboard-overview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="landing.css">
 </head>
 <body>
+
 <header class="site">
-  <div class="wrap">
-    <a class="brand" href="index.html"><span class="mark">eO</span> ExpensO Legal</a>
-    <nav class="docs">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="data-deletion.html">Data Deletion</a>
-      <a href="disclosures.html">First-run Disclosures</a>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><span class="mark">eO</span> ExpensO</a>
+    <nav class="chipnav" aria-label="Section navigation">
+      <a href="#dashboard">Dashboard</a>
+      <a href="#ledger">Ledger</a>
+      <a href="#budgets">Budgets</a>
+      <a href="#reports">Reports</a>
+      <a href="#savings">Savings</a>
+      <a href="#guide">Guide</a>
+      <a href="#security">Privacy</a>
     </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
   </div>
 </header>
 
-<div class="wrap">
-  <h1>ExpensO - The Expense Organiser</h1>
-  <p class="meta">Legal documents for the ExpensO Android &amp; iOS app. Published by the developer of ExpensO (an individual developer based in India).</p>
+<main id="top">
 
-  <p>ExpensO is an offline-first, end-to-end-encrypted personal finance app.
-  Your financial data stays on your device. The documents below explain what
-  data the app processes, on what terms you may use it, and how to delete
-  your data completely.</p>
+  <!-- ============================================================ HERO -->
+  <section class="hero no-border">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Personal finance, built for how India actually spends</span>
+        <h1>Know exactly where your money goes — without handing it to anyone else.</h1>
+        <p class="lede">ExpensO is a budgeting and expense tracker that runs entirely on your phone. No servers, no analytics, no subscription — just your money, organised in ₹ lakhs and crores, the way you actually think about it.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#guide">See the full guide</a>
+          <a class="btn btn-ghost" href="#security">Read how your data is protected</a>
+        </div>
+        <div class="badge-row">
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>End-to-end encrypted</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M4.6 9h14.8M4.6 15h14.8M12 3a13 13 0 0 1 0 18M12 3a13 13 0 0 0 0 18"/></svg>Works fully offline</span>
+          <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V4h16v4M8 20h8M12 4v16"/></svg>Pay once, own it forever</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone phone-lg">
+          <img src="images/dashboard-overview.png" width="560" height="1177" alt="ExpensO Dashboard showing ₹1,00,000 income, ₹82,607.95 spending, a Budgeted/Savings/Unallocated split, and a donut chart of where the money went">
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <ul class="index-list">
-    <li>
-      <a href="privacy.html">
-        <div class="doc-title">Privacy Policy</div>
-        <div class="doc-desc">What data ExpensO handles, where it lives, advertising &amp; consent, cloud sync, and your rights by region.</div>
-      </a>
-    </li>
-    <li>
-      <a href="terms.html">
-        <div class="doc-title">Terms &amp; Conditions</div>
-        <div class="doc-desc">The licence to use the app, no-financial-advice disclaimer, backups, advertising, and the one-time "ExpensO Full" purchase.</div>
-      </a>
-    </li>
-    <li>
-      <a href="data-deletion.html">
-        <div class="doc-title">Data Deletion</div>
-        <div class="doc-desc">Step-by-step instructions to erase your ExpensO data completely, including any cloud-synced copy.</div>
-      </a>
-    </li>
-    <li>
-      <a href="disclosures.html">
-        <div class="doc-title">First-run Disclosures</div>
-        <div class="doc-desc">The plain-language summary shown in the app before you start using it.</div>
-      </a>
-    </li>
-  </ul>
+  <!-- ========================================================= WHO-BAND -->
+  <section class="who no-border">
+    <div class="wrap">
+      <blockquote>
+        Rent on the <span>1st</span>. The EB bill by the <span>18th</span>. An EMI, a tuition fee, a nephew's birthday gift, the gym membership you keep meaning to cancel — and, if the month goes well, something left over for a recurring deposit. That's not a spreadsheet problem. That's just a month. ExpensO is built around exactly this rhythm, not a Western budgeting template with categories that don't exist here.
+        <cite>Every screenshot on this page is this real, ordinary month — not a mockup.</cite>
+      </blockquote>
+    </div>
+  </section>
 
-  <footer class="site">
-    <p>These pages are also linked from inside the app under <strong>Settings → Legal</strong>.
-    For a specific vulnerability or data question, use the contact details listed
-    in the app's Settings → Legal screen.</p>
-  </footer>
-</div>
+  <!-- ============================================================ TRUST -->
+  <section id="security-preview" class="no-border">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why ExpensO, not another budgeting app</span>
+        <h2>Five things that are true about ExpensO and almost nothing else in this category.</h2>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Private by construction</h3>
+          <p>Your ledger never leaves your phone unless you choose to sync it — and even then it's ciphertext only, in your own Google Drive. There is no ExpensO server. There is nothing to breach.</p>
+        </div>
+        <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><line x1="3" y1="3" x2="21" y2="21"/></svg></span>
+          <h3>Nothing is watching you spend</h3>
+          <p>No analytics SDK, no crash reporter, no telemetry of any kind — the developer sees nothing. The only third party that ever runs is an ad SDK, on the free tier only, and only after you say yes.</p>
+        </div>
+        <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 12.6L12.7 20.5a2 2 0 0 1-2.8 0l-6.4-6.4a2 2 0 0 1 0-2.8L11.4 3.4 20.6 4l.6 9.2z"/><circle cx="15.5" cy="8.5" r="1.2"/></svg></span>
+          <h3>Buy it once. That's it.</h3>
+          <p>A single "ExpensO Full" purchase removes ads forever. No subscription, no premium tier that creeps wider every year, no feature held hostage behind a paywall you didn't agree to.</p>
+        </div>
+        <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><text x="12" y="16.5" font-family="Manrope, sans-serif" font-size="11" font-weight="800" text-anchor="middle" fill="currentColor" stroke="none">₹</text></svg></span>
+          <h3>Built on the rupee, not translated to it</h3>
+          <p>Lakhs and crores where they belong, EB bills and loan EMIs as first-class categories, and five Indian languages — English, Hindi, Tamil, Spanish and Arabic.</p>
+        </div>
+        <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.4"/></svg></span>
+          <h3>Locked behind your fingerprint</h3>
+          <p>Biometric app lock and screenshot-blocked financial screens are on by default — your data is encrypted either way, this just keeps it off your app switcher and out of stray screenshots.</p>
+        </div>
+        <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor" stroke="none"/></svg></span>
+          <h3>Goals, not just tracking</h3>
+          <p>Budgets with rollover and hard caps, savings goals with real pacing, and reports that explain the "why" — not just a list of debits.</p>
+        </div>
+      </div>
+      <a class="trust-link" href="privacy.html">Read the full Privacy Policy →</a>
+    </div>
+  </section>
+
+  <!-- ========================================================= FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What's inside</span>
+        <h2>Seven ways ExpensO does the thinking so you don't have to.</h2>
+        <p>Every screen below is a real screenshot of the running app — light theme and dark theme both included, because ExpensO ships four distinct looks, not one.</p>
+      </div>
+
+      <!-- 1. DASHBOARD -->
+      <details class="feature" id="dashboard" open>
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">01 — DASHBOARD</span>
+            <span class="f-title">The whole month, in one glance</span>
+            <span class="f-teaser">Income, spending, net position, and where every rupee went — before you've scrolled once.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Income, spending and net for the month, at the top — no digging.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Budgeted, Savings and Unallocated shown as three honest, independent numbers — not one misleading "savings rate."</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A live donut of exactly where the money went — tap any slice to see the entries behind it.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Tap any figure for its exact value — handy the moment a number gets long.</li>
+            </ul>
+            <div class="phone shot-single">
+              <img src="images/dashboard-drilldown.png" width="560" height="1176" loading="lazy" alt="Dashboard donut chart expanded to show Rent / Mortgage — ₹22,000.00, 27% of total, with a View entries button">
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 2. LEDGER -->
+      <details class="feature" id="ledger">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 9h7M9 13h7M9 17h4"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">02 — LEDGER</span>
+            <span class="f-title">Every entry, three ways to look at it</span>
+            <span class="f-teaser">Day for today, Month for the running list, Year for the whole picture — one tap apart.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Day view for a single day, Month for the running list, Year for a month-by-month income/expense table.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Genuine multi-script support — log a payee in Hindi, Tamil, Arabic, or any script your keyboard offers.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Every row shows its category and sub-category — edit or delete inline, no extra screen.</li>
+            </ul>
+            <div class="shot-gallery">
+              <div class="phone"><img src="images/ledger-day.png" width="560" height="1180" loading="lazy" alt="Ledger Day view for Fri, Sep 18, 2026 showing three entries including a Hindi payee"></div>
+              <div class="phone"><img src="images/ledger-month.png" width="560" height="1180" loading="lazy" alt="Ledger Month view for September 2026 listing entries with category and amount"></div>
+              <div class="phone"><img src="images/ledger-year.png" width="560" height="1176" loading="lazy" alt="Ledger Year view for 2026 showing income and expense totals per month"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 3. QUICK ENTRY -->
+      <details class="feature" id="quick-entry">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">03 — QUICK ENTRY</span>
+            <span class="f-title">Log it before you forget it</span>
+            <span class="f-teaser">A calculator for the amount, a searchable category tree, done in a few taps.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A calculator-style amount field — never the system numeric keyboard, never a typo in the amount.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Categories load collapsed so the list stays short — search reveals a match instantly, wherever it's nested.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One toggle between Expense and Income, same screen.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>If a category has more than one budget (see Envelope budgets below), you're asked which one this entry belongs to — right here, not later.</li>
+            </ul>
+            <div class="shot-gallery">
+              <div class="phone"><img src="images/quick-entry-expense.png" width="560" height="1183" loading="lazy" alt="New entry sheet set to Expense with a collapsible category list"></div>
+              <div class="phone"><img src="images/quick-entry-income.png" width="560" height="1183" loading="lazy" alt="New entry sheet set to Income showing Salary, Business, Interest / Dividends, Refunds, Other Income and One-off / Windfall"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 4. BUDGETS -->
+      <details class="feature" id="budgets">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l7 4"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">04 — BUDGETS</span>
+            <span class="f-title">Every rupee has a job</span>
+            <span class="f-teaser">Caps, rollovers, hard limits, nested sub-budgets — and two caps on one category when you need it.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rollover budgets carry unspent money into next month automatically.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Hard caps warn you before an entry would breach the limit.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Nest sub-budgets under a parent — "Transport" as a whole, "Fuel" tracked underneath it.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><strong style="color: var(--ink)">Envelope budgets</strong> — need Bike petrol and Car petrol tracked separately, even though both are "Fuel"? Give the category two budgets. Each one paces independently.</li>
+            </ul>
+            <div>
+              <div class="phone">
+                <img id="budgets-shot" src="images/budgets-dark.png" width="560" height="1179" loading="lazy" alt="Budgets screen showing Monthly plan, Housing & bills, Eating out & groceries, and Transport with Car petrol / Bike petrol envelope budgets">
+              </div>
+              <div class="shot-toggle" data-shot-toggle="budgets-shot">
+                <div class="seg">
+                  <button type="button" data-src="images/budgets-dark.png" aria-pressed="true">Vault Aurora</button>
+                  <button type="button" data-src="images/budgets-light.png" aria-pressed="false">Ledger Ink</button>
+                </div>
+              </div>
+              <p class="f-note">Creating a budget takes one sheet — name, category, monthly limit, rollover and hard-cap switches:</p>
+              <div class="phone shot-single" style="margin-top: 12px;">
+                <img src="images/budgets-create.png" width="560" height="1177" loading="lazy" alt="New budget sheet with Name, Applies to, Monthly limit, Roll unspent money into next month, and Hard cap">
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 5. REPORTS -->
+      <details class="feature" id="reports">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">05 — REPORTS</span>
+            <span class="f-title">Numbers that actually explain themselves</span>
+            <span class="f-teaser">Nine different ways to see the same money — a Sankey cash-flow, a treemap, trends, and more.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><strong style="color: var(--ink)">Cash flow</strong> — a Sankey diagram: salary and interest flowing in, every category flowing out, the surplus flowing to "Unaccounted."</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><strong style="color: var(--ink)">Where your money went</strong> — a treemap sized by spend, and a ranked category list beside it.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Monthly trend, top merchants, spending by tag, by account, budget vs. actual, a daily heatmap, recurring vs. one-off, and net-worth trend.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Every report opens fullscreen and pinch-zooms — built for a real screen, not a squint.</li>
+            </ul>
+            <div>
+              <div class="phone">
+                <img id="reports-shot" src="images/cashflow-dark.png" width="560" height="1168" loading="lazy" alt="Cash flow Sankey diagram showing Salary flowing into Housing, Bills & Utilities, Unaccounted, Debt & Investments, and more categories">
+              </div>
+              <div class="shot-toggle" data-shot-toggle="reports-shot">
+                <div class="seg">
+                  <button type="button" data-src="images/cashflow-dark.png" aria-pressed="true">Vault Aurora</button>
+                  <button type="button" data-src="images/cashflow-light.png" aria-pressed="false">Ledger Ink</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shot-gallery" style="margin-top: 22px;">
+            <div class="phone"><img src="images/spending-treemap.png" width="560" height="1179" loading="lazy" alt="Where your money went treemap, sized by category spend"></div>
+            <div class="phone"><img src="images/spending-by-category.png" width="560" height="1170" loading="lazy" alt="Spending by category report ranked biggest first"></div>
+            <div class="phone"><img src="images/spending-by-tag.png" width="560" height="1170" loading="lazy" alt="Spending by tag report showing Goa trip, Reimbursable and Gifts"></div>
+            <div class="phone"><img src="images/reports-list.png" width="560" height="1173" loading="lazy" alt="Full list of report types: Monthly trend, Top merchants, Spending by tag, Spending by account, Budget vs actual, Daily heatmap, Recurring vs one-off, Net-worth trend"></div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 6. SAVINGS -->
+      <details class="feature" id="savings">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">06 — SAVINGS GOALS</span>
+            <span class="f-title">Give your money a destination</span>
+            <span class="f-teaser">Name a goal, a target, a date — ExpensO works out the pace for you.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>As many goals as you want — a home, a car, an emergency fund.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Set a target amount and a target date — see the days remaining and the percentage there, always current.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Pairs naturally with a "Savings" budget category, so the Dashboard's Savings% reflects money you actually moved, not a guess.</li>
+            </ul>
+            <div class="phone shot-single">
+              <img src="images/savings-goals.png" width="560" height="1171" loading="lazy" alt="Savings screen showing Sweet Home goal at ₹0 of ₹1,00,00,000 and Car goal at ₹0 of ₹20,00,000">
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 7. PERSONALIZE -->
+      <details class="feature" id="personalize">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2" fill="var(--surface)"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="16" cy="12" r="2" fill="var(--surface)"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="11" cy="18" r="2" fill="var(--surface)"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">07 — MAKE IT YOURS</span>
+            <span class="f-title">Categories, accounts, and four ways it looks</span>
+            <span class="f-teaser">Rename anything, track every account you actually use, pick a theme that fits you.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rename any category, and add up to two of your own top-level ones — each with up to six sub-categories.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Track bank, cash and card accounts side by side, each with its own opening balance.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Four full themes — Classic, Vault Aurora, Daylight Frost, Ledger Ink — plus adjustable text size.</li>
+            </ul>
+            <div class="shot-gallery">
+              <div class="phone"><img src="images/category-manager.png" width="560" height="1183" loading="lazy" alt="Category Manager showing Housing, Bills & Utilities expanded with its sub-categories"></div>
+              <div class="phone"><img src="images/account-manager.png" width="560" height="1178" loading="lazy" alt="Accounts screen showing Everyday Checking, Wallet (cash) and Rewards Card"></div>
+              <div class="phone"><img src="images/themes.png" width="560" height="650" loading="lazy" alt="Appearance settings showing four themes: Classic, Vault Aurora, Daylight Frost, and Ledger Ink"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ======================================================= GUIDE-LEAD -->
+  <section>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Before you install anything</span>
+        <h2 style="font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 14px;">See exactly what you're getting — the same depth that's built into the app itself.</h2>
+        <p style="font-size: 1.03rem;">Every screen above also has a full, exhaustive walkthrough right inside ExpensO (Settings → App guide → Step by step info). We've put that same walkthrough here, topic by topic, so there's nothing to discover after you install — only after you decide to.</p>
+      </div>
+      <div class="phone phone-lg">
+        <img src="images/in-app-guide.png" width="560" height="1171" loading="lazy" alt="How ExpensO works — in-app guide, slide 1 of 10, Everything at a glance, with a Step by step info button">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= GUIDE-Z -->
+  <section id="guide" class="guide-zone">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The full step-by-step guide</span>
+        <h2>Ten topics. Every one of them exhaustive.</h2>
+        <p>This is the manual, not the pitch — practical, in order, written for the first time you actually sit down and set this up.</p>
+      </div>
+
+      <details class="guide-item" open>
+        <summary><span class="g-num">1</span> Setting up your accounts<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Open <strong>Budgets → Accounts</strong> (or you'll be prompted the first time you add an entry). Add one account per real place your money sits — a bank account, a wallet of cash, a credit card. For each one, set:</p>
+          <h4>What to fill in</h4>
+          <ol>
+            <li><strong>Type</strong> — Bank, Cash, or Card. This only affects grouping in reports, not behaviour.</li>
+            <li><strong>Opening balance</strong> — what's in it right now. For a credit card, enter the current balance owed as a <em>negative</em> number.</li>
+            <li><strong>Monthly salary (optional, bank accounts only)</strong> — feeds the Dashboard's Budgeted/Savings/Unallocated split. Skip it if income is irregular; log it as entries instead.</li>
+          </ol>
+          <p>You can add, rename, or delete accounts any time from the same screen — deleting an account keeps its historical entries in the Ledger, it just stops appearing as a destination for new ones.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">2</span> Building your category tree<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>ExpensO ships with eight expense categories and one income category already built for an Indian household — Housing, Food, Transport, Shopping, Entertainment, Health, Family & Education, and Debt & Investments — each with five ready-made sub-categories (Rent, EB bill, Fuel, Tuition, Loan EMIs, and so on).</p>
+          <h4>Making it yours</h4>
+          <ol>
+            <li>Go to <strong>Settings → Category Manager</strong>.</li>
+            <li>Tap the pencil on any category or sub-category to rename it in place — your historical entries update to match automatically.</li>
+            <li>Need something that doesn't exist yet? You can add up to <strong>two of your own top-level categories</strong> (across expense and income combined), each with up to six sub-categories of your own.</li>
+          </ol>
+          <p>Category ids are stable once created — renaming is instant and safe, but plan your two custom top-level slots deliberately, since they're the two you get.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">3</span> Logging your first entries<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Tap the <strong>+</strong> button from Dashboard or Ledger. Choose <strong>Expense</strong> or <strong>Income</strong> at the top — everything below adapts to that choice.</p>
+          <h4>Step by step</h4>
+          <ol>
+            <li>Tap the amount field — a calculator sheet opens. Type the amount and confirm; the system keyboard is never used for money, so there's no risk of a stray decimal.</li>
+            <li>Pick a category. The list loads fully collapsed for a clean first look — tap a parent's chevron to expand it, or just start typing in Search to jump straight to a match, expanded or not.</li>
+            <li>Pick the account the money moved through.</li>
+            <li>If that category currently has more than one active budget (see Envelope budgets), you'll be asked which one this entry counts against — this is the only extra step, and only when it's genuinely ambiguous.</li>
+            <li>Optionally add a payee, a note, or a #tag (tags power the "Spending by tag" report — useful for a trip, a project, or anything reimbursable).</li>
+            <li>Save. The entry appears immediately in the Ledger and folds into every Dashboard number and report.</li>
+          </ol>
+          <p>To edit or delete later: find the entry in the Ledger and use the pencil or trash icon on its row.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">4</span> Reading the Dashboard<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>The Dashboard is deliberately the very first screen — everything on it is scoped to the current month.</p>
+          <h4>What each number means</h4>
+          <ul>
+            <li><strong>Income / Spending / Net</strong> — total money in, total money out, and the difference. Tap any of the three for its exact value.</li>
+            <li><strong>Budgeted</strong> — the share of this month's income already covered by a budget cap somewhere. Not the same as spent — a category can be "budgeted" even before a rupee of it is spent.</li>
+            <li><strong>Savings</strong> — the share of income actually booked under a Savings-flagged category this month. Zero until you log something there — it will never show a number you haven't earned.</li>
+            <li><strong>Unallocated</strong> — the rest: income with no budget claim on it yet. Not a bad number — just an honest one.</li>
+            <li><strong>Where your money went</strong> — a donut of this month's spend by category. Tap any slice to see the exact amount, its share of total, and a button straight into the filtered entry list.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">5</span> The Ledger — Day, Month, Year<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Three views of the same data, switched with the toggle at the top:</p>
+          <ul>
+            <li><strong>Day</strong> — every entry on one specific date. Best for "what did I actually spend today."</li>
+            <li><strong>Month</strong> — a running list for the month, newest first. This is where you'll spend most of your time.</li>
+            <li><strong>Year</strong> — a twelve-row table, income and expense per month, for a year-at-a-glance view (and the source for the Net-worth and Monthly-trend reports).</li>
+          </ul>
+          <p>Use the arrows either side of the date/month/year label to move back and forward — there's no limit on how far back you can browse.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">6</span> Creating and managing budgets<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Open <strong>Budgets</strong> and tap <strong>+ Budget</strong>.</p>
+          <h4>Step by step</h4>
+          <ol>
+            <li>Give it a name (optional — leave it blank and ExpensO falls back to the category's own name).</li>
+            <li><strong>Applies to</strong> — pick a category, a sub-category, or "Overall (all spending)" for a single whole-wallet cap.</li>
+            <li>Set the <strong>monthly limit</strong>.</li>
+            <li><strong>Roll unspent money into next month</strong> — turn this on for categories where under-spending should build up a cushion (an annual insurance premium you're saving toward, for instance).</li>
+            <li><strong>Hard cap</strong> — turn this on to get warned before an entry would push you over the limit, rather than finding out after the fact.</li>
+          </ol>
+          <p>A category can hold a parent-level budget <em>and</em> its own sub-category budgets at the same time — the sub-budgets nest visually underneath, and the Dashboard's "Budgeted" figure counts each rupee only once.</p>
+          <p>Every month is editable going forward, plus the current month and the two months before it — older months stay locked as a clean historical record. Use <strong>Copy previous month</strong> (top-right) to carry last month's limits forward as this month's explicit values in one tap.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">7</span> Envelope budgets — two caps, one category<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Sometimes one category genuinely covers two things you want to track separately — bike petrol and car petrol are both "Fuel," but you'd like to know each on its own terms. ExpensO's answer: create <strong>two budgets on the same category</strong>.</p>
+          <h4>How it behaves</h4>
+          <ol>
+            <li>Create the first budget as usual — name it something specific, like "Bike petrol" — applied to the Fuel category.</li>
+            <li>Create a second budget, also applied to Fuel, named "Car petrol."</li>
+            <li>From now on, every new entry under Fuel asks which of the two it belongs to.</li>
+            <li>Each envelope paces independently — its own progress bar, its own remaining amount, its own rollover and hard-cap settings.</li>
+          </ol>
+          <p>Entries logged before the second envelope existed (or from an older version of the app) aren't forced to guess — their spend is split between the envelopes in proportion to each one's limit, so historical totals still add up correctly.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">8</span> Making sense of Reports<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Open <strong>Reports</strong> and choose a period at the top (This month, Last month, Last 3/6 months, This year, or a custom range). Every card below updates to that period.</p>
+          <h4>The nine report types</h4>
+          <ul>
+            <li><strong>Cash flow</strong> — a Sankey diagram: every income source flowing in on the left, every category flowing out on the right, with the surplus flowing to "Unaccounted."</li>
+            <li><strong>Where your money went</strong> — a treemap, area sized by spend, for a shape-based read on the month.</li>
+            <li><strong>Spending by category</strong> — a ranked, numbered list, biggest first.</li>
+            <li><strong>Monthly trend</strong> — income vs. spending as a line, over the last six months.</li>
+            <li><strong>Top merchants</strong> — who you paid the most, by payee name.</li>
+            <li><strong>Spending by tag</strong> — only the entries you tagged, grouped by tag — perfect for isolating a trip or a project.</li>
+            <li><strong>Spending by account</strong> — which account the money actually came out of.</li>
+            <li><strong>Budget vs. actual</strong> — limit against spent, for every budget, side by side.</li>
+            <li><strong>Daily heatmap</strong>, <strong>Recurring vs. one-off</strong>, and <strong>Net-worth trend</strong> round out the set for anyone who wants to go further.</li>
+          </ul>
+          <p>Tap "Fullscreen" on the Cash flow or treemap card to pinch-zoom — both are built to be read on a real screen, not squinted at in a small card.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">9</span> Setting a savings goal<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Open <strong>Savings → Add a savings goal</strong>.</p>
+          <ol>
+            <li>Name the goal — "Sweet Home," "Car," "Emergency fund," whatever it actually is.</li>
+            <li>Set a target amount and a target date.</li>
+            <li>ExpensO shows the amount saved so far, the percentage complete, and the days remaining — recalculated every time you open the screen.</li>
+          </ol>
+          <p>A goal doesn't move money on its own — pair it with a budget under a Savings-flagged category (or your own custom "Savings" category) so the amount you actually log there is what counts toward it, and toward the Dashboard's Savings% figure.</p>
+        </div>
+      </details>
+
+      <details class="guide-item">
+        <summary><span class="g-num">10</span> Personalizing — themes, text size, and security<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
+        <div class="guide-body">
+          <p>Open <strong>Settings → Appearance</strong>.</p>
+          <ul>
+            <li><strong>Theme</strong> — Classic (the original teal Material look), Vault Aurora (dark, brass accents), Daylight Frost (bright, frosted white), or Ledger Ink (cool paper, oxblood, editorial serif). Switch any time — nothing about your data changes.</li>
+            <li><strong>Display size</strong> — scales text and spacing app-wide, independent of your phone's own system text size.</li>
+          </ul>
+          <p>Under <strong>Settings → Security</strong>: turn on <strong>Biometric app lock</strong> to require your fingerprint, face, or device PIN every time ExpensO opens. Your data is encrypted on-device either way — this adds a lock on the door on top of that. Financial screens are also screenshot-blocked by default, so they never appear in your recent-apps thumbnail or in an accidental screenshot.</p>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ======================================================== SECURITY -->
+  <section id="security">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The fine print, in plain language</span>
+        <h2>How your data is actually protected.</h2>
+        <p>Not a promise — a description of what the code does. Every claim below is enforced by the app itself, not a policy someone could quietly stop following.</p>
+      </div>
+      <div class="sec-grid">
+        <div class="sec-item">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+          <div><h4>Encrypted at rest, always</h4><p>Your ledger is stored in an encrypted local database from the moment the app is installed — not an optional setting.</p></div>
+        </div>
+        <div class="sec-item">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <div><h4>Biometric-bound, not just PIN-gated</h4><p>The app-lock key itself is bound to your device's secure hardware and only released after a fresh biometric check — not a password ExpensO stores and compares.</p></div>
+        </div>
+        <div class="sec-item">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><line x1="3" y1="3" x2="21" y2="21"/></svg></span>
+          <div><h4>No first-party analytics, ever</h4><p>No crash reporter, no usage analytics, no telemetry of any kind ships in ExpensO. The developer does not know how you use the app.</p></div>
+        </div>
+        <div class="sec-item">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v4"/></svg></span>
+          <div><h4>Card numbers are actively refused</h4><p>A built-in guard checks every free-text field the moment it would reach storage, and blocks anything that looks like a card or CVV number — it should never be there in the first place.</p></div>
+        </div>
+        <div class="sec-item">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M20 4L4 20"/><circle cx="12" cy="12" r="9"/></svg></span>
+          <div><h4>Screenshot-blocked by default</h4><p>Financial screens carry a system flag that keeps them out of your recent-apps thumbnail and blocks screenshots, on by default.</p></div>
+        </div>
+        <div class="sec-item">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6M12 15v6M4.2 7.8l4.2 2.4M15.6 13.8l4.2 2.4M4.2 16.2l4.2-2.4M15.6 10.2l4.2-2.4"/></svg></span>
+          <div><h4>Sync, if you want it, on your terms</h4><p>Optional cloud sync writes only ciphertext to a private folder in <em>your own</em> Google Drive — never to a server ExpensO operates, because none exists.</p></div>
+        </div>
+      </div>
+      <a class="trust-link" href="privacy.html">Read the full Privacy Policy →</a>
+    </div>
+  </section>
+
+  <!-- ============================================================ CLOSE -->
+  <section class="close-cta no-border">
+    <div class="wrap">
+      <h2>Your money. Your phone. Nobody else's business.</h2>
+      <p>Built and maintained by a solo developer in India, for the way money actually moves here — not adapted from somewhere else.</p>
+      <a class="btn btn-primary" href="#top">Back to the top</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top"><span class="mark">eO</span> ExpensO</a>
+        <p>ExpensO - The Expense Organiser. Offline-first, end-to-end-encrypted personal finance, built for India.</p>
+      </div>
+      <nav class="footer-links" aria-label="Legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="data-deletion.html">Data Deletion</a>
+        <a href="disclosures.html">First-run Disclosures</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ExpensO. An individual developer, based in India.</span>
+      <span>No analytics on this page either — no tracking scripts, no cookies.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="landing.js"></script>
 </body>
 </html>
