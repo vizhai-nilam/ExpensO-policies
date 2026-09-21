@@ -142,10 +142,7 @@ header.site .bar {
   color: var(--ink); text-decoration: none; white-space: nowrap;
 }
 .brand .mark {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px; border-radius: 9px;
-  background: var(--accent); color: var(--accent-ink);
-  font-family: var(--sans); font-weight: 800; font-size: 0.85rem;
+  width: 32px; height: 32px; border-radius: 9px; flex: none;
 }
 .chipnav {
   display: flex; gap: 8px; overflow-x: auto; -webkit-overflow-scrolling: touch;
@@ -195,15 +192,23 @@ header.site .bar {
 
 .hero h1 { font-size: clamp(2.1rem, 4.4vw, 3.2rem); line-height: 1.12; margin: 14px 0 18px; }
 .hero .lede { font-size: 1.12rem; max-width: 46ch; }
-.hero .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 
-.badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
-.badge {
-  display: inline-flex; align-items: center; gap: 7px;
-  font-size: 0.82rem; color: var(--ink-dim); border: 1px solid var(--border);
-  padding: 7px 12px; border-radius: 999px; background: var(--surface);
+/* One consistent pill treatment for every hero action/claim — two links,
+   two informational badges — same size, same icon weight, differing only
+   by fill so the primary action still stands out. */
+.pill-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.pill {
+  display: inline-flex; align-items: center; gap: 9px;
+  font: 600 0.92rem var(--sans); text-decoration: none; cursor: default;
+  padding: 12px 20px; border-radius: 999px; border: 1px solid var(--border-strong);
+  color: var(--ink); background: var(--surface); white-space: nowrap;
 }
-.badge svg { width: 14px; height: 14px; color: var(--accent); flex: none; }
+a.pill { cursor: pointer; }
+.pill svg { width: 17px; height: 17px; color: var(--accent); flex: none; }
+.pill-primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+.pill-primary svg { color: var(--accent-ink); }
+.pill-primary:hover { filter: brightness(1.06); }
+a.pill:not(.pill-primary):hover { border-color: var(--accent); color: var(--accent); }
 
 /* --------------------------------------------------------------- phones */
 .phone {
@@ -218,15 +223,6 @@ header.site .bar {
   content: ""; position: absolute; inset: -40px; z-index: -1;
   background: radial-gradient(220px 220px at 50% 30%, var(--accent-soft), transparent 70%);
 }
-
-/* ------------------------------------------------------------- who-band */
-.who { padding: 10px 0 50px; }
-.who blockquote {
-  margin: 0; font-family: var(--serif); font-size: clamp(1.25rem, 2.6vw, 1.7rem);
-  line-height: 1.5; color: var(--ink); font-weight: 500; text-wrap: balance;
-}
-.who blockquote span { color: var(--accent); }
-.who cite { display: block; margin-top: 16px; font-style: normal; font-size: 0.92rem; color: var(--ink-faint); }
 
 /* -------------------------------------------------------------- section */
 section { padding: 64px 0; border-top: 1px solid var(--border); }
