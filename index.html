@@ -43,7 +43,7 @@
       <div>
         <h1>The private expense organiser: encrypted, on-device, no account, no tracking.</h1>
         <p class="hero-sub">Know exactly where your money goes — without handing it to anyone else.</p>
-        <p class="lede">Track every rupee. Understand every flow. ExpensO runs entirely on your phone — no servers, no analytics — turning your income and spending into reports you'll actually want to look at.</p>
+        <p class="lede">Track every rupee. Understand every flow. ExpensO runs entirely on your phone — no servers, no third-party tracking — turning your income and spending into visually clean, interactive reports that give a self-explanatory view of how your money flows.</p>
         <div class="pill-row">
           <a class="pill pill-primary" href="#guide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h9l4 4v12H6z"/><path d="M9 9h7M9 13h7M9 17h4"/></svg>See the full guide</a>
           <a class="pill" href="#security"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>Read how your data is protected</a>
@@ -104,14 +104,14 @@
           <p>Your ledger never leaves your phone unless you choose to sync it — and even then it's ciphertext only, in your own Google Drive. There is no ExpensO server. There is nothing to breach.</p>
         </div>
         <div class="trust-card">
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
+          <h3>Reports that explain, not just tabulate</h3>
+          <p>A Sankey diagram traces every rupee from income to category to surplus, a treemap shows where it went at a glance, and seven more report types dig deeper into the same month.</p>
+        </div>
+        <div class="trust-card">
           <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><line x1="3" y1="3" x2="21" y2="21"/></svg></span>
           <h3>Nothing is watching you spend</h3>
           <p>No analytics SDK, no crash reporter, no telemetry of any kind — the developer sees nothing. The only third party that ever runs is an ad SDK, on the free tier only, and only after you say yes.</p>
-        </div>
-        <div class="trust-card">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><text x="12" y="16.5" font-family="Manrope, sans-serif" font-size="11" font-weight="800" text-anchor="middle" fill="currentColor" stroke="none">₹</text></svg></span>
-          <h3>Built on the rupee, not translated to it</h3>
-          <p>Lakhs and crores where they belong, EB bills and loan EMIs as first-class categories, and five Indian languages — English, Hindi, Tamil, Spanish and Arabic.</p>
         </div>
         <div class="trust-card">
           <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.4"/></svg></span>
@@ -124,9 +124,9 @@
           <p>Budgets with rollover and hard caps, savings goals with real pacing, and reports that explain the "why" — not just a list of debits.</p>
         </div>
         <div class="trust-card">
-          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
-          <h3>Reports that explain, not just tabulate</h3>
-          <p>A Sankey diagram traces every rupee from income to category to surplus, a treemap shows where it went at a glance, and seven more report types dig deeper into the same month.</p>
+          <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 19h16"/></svg></span>
+          <h3>Nothing you can't take with you</h3>
+          <p>Every entry, budget and report exports to CSV or PDF, in full, whenever you want. Stop using ExpensO tomorrow and your financial history leaves with you — not locked in someone else's format.</p>
         </div>
       </div>
       <a class="trust-link" href="privacy.html">Read the full Privacy Policy →</a>
@@ -143,7 +143,7 @@
       </div>
 
       <!-- 1. DASHBOARD -->
-      <details class="feature" id="dashboard" open>
+      <details class="feature" id="dashboard">
         <summary>
           <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg></span>
           <span class="f-head">
@@ -168,104 +168,12 @@
         </div>
       </details>
 
-      <!-- 2. LEDGER -->
-      <details class="feature" id="ledger">
-        <summary>
-          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 9h7M9 13h7M9 17h4"/></svg></span>
-          <span class="f-head">
-            <span class="f-num">02 — LEDGER</span>
-            <span class="f-title">Every entry, three ways to look at it</span>
-            <span class="f-teaser">Day for today, Month for the running list, Year for the whole picture — one tap apart.</span>
-          </span>
-          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
-        </summary>
-        <div class="f-body">
-          <div class="f-content">
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Day view for a single day, Month for the running list, Year for a month-by-month income/expense table.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Genuine multi-script support — log a payee in Hindi, Tamil, Arabic, or any script your keyboard offers.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Every row shows its category and sub-category — edit or delete inline, no extra screen.</li>
-            </ul>
-            <div class="shot-gallery">
-              <div class="phone"><img src="images/ledger-day.png" width="560" height="1180" loading="lazy" alt="Ledger Day view for Fri, Sep 18, 2026 showing three entries including a Hindi payee"></div>
-              <div class="phone"><img src="images/ledger-month.png" width="560" height="1180" loading="lazy" alt="Ledger Month view for September 2026 listing entries with category and amount"></div>
-              <div class="phone"><img src="images/ledger-year.png" width="560" height="1176" loading="lazy" alt="Ledger Year view for 2026 showing income and expense totals per month"></div>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- 3. QUICK ENTRY -->
-      <details class="feature" id="quick-entry">
-        <summary>
-          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>
-          <span class="f-head">
-            <span class="f-num">03 — QUICK ENTRY</span>
-            <span class="f-title">Log it before you forget it</span>
-            <span class="f-teaser">A calculator for the amount, a searchable category tree, done in a few taps.</span>
-          </span>
-          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
-        </summary>
-        <div class="f-body">
-          <div class="f-content">
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A calculator-style amount field — never the system numeric keyboard, never a typo in the amount.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Categories load collapsed so the list stays short — search reveals a match instantly, wherever it's nested.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One toggle between Expense and Income, same screen.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>If a category has more than one budget (see Envelope budgets below), you're asked which one this entry belongs to — right here, not later.</li>
-            </ul>
-            <div class="shot-gallery">
-              <div class="phone"><img src="images/quick-entry-expense.png" width="560" height="1183" loading="lazy" alt="New entry sheet set to Expense with a collapsible category list"></div>
-              <div class="phone"><img src="images/quick-entry-income.png" width="560" height="1183" loading="lazy" alt="New entry sheet set to Income showing Salary, Business, Interest / Dividends, Refunds, Other Income and One-off / Windfall"></div>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- 4. BUDGETS -->
-      <details class="feature" id="budgets">
-        <summary>
-          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l7 4"/></svg></span>
-          <span class="f-head">
-            <span class="f-num">04 — BUDGETS</span>
-            <span class="f-title">Every rupee has a job</span>
-            <span class="f-teaser">Caps, rollovers, hard limits, nested sub-budgets — and two caps on one category when you need it.</span>
-          </span>
-          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
-        </summary>
-        <div class="f-body">
-          <div class="f-content">
-            <ul>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rollover budgets carry unspent money into next month automatically.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Hard caps warn you before an entry would breach the limit.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Nest sub-budgets under a parent — "Transport" as a whole, "Fuel" tracked underneath it.</li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><strong style="color: var(--ink)">Envelope budgets</strong> — need Bike petrol and Car petrol tracked separately, even though both are "Fuel"? Give the category two budgets. Each one paces independently.</li>
-            </ul>
-            <div>
-              <div class="phone">
-                <img id="budgets-shot" src="images/budgets-dark.png" width="560" height="1179" loading="lazy" alt="Budgets screen showing Monthly plan, Housing & bills, Eating out & groceries, and Transport with Car petrol / Bike petrol envelope budgets">
-              </div>
-              <div class="shot-toggle" data-shot-toggle="budgets-shot">
-                <div class="seg">
-                  <button type="button" data-src="images/budgets-dark.png" aria-pressed="true">Vault Aurora</button>
-                  <button type="button" data-src="images/budgets-light.png" aria-pressed="false">Ledger Ink</button>
-                </div>
-              </div>
-              <p class="f-note">Creating a budget takes one sheet — name, category, monthly limit, rollover and hard-cap switches:</p>
-              <div class="phone shot-single" style="margin-top: 12px;">
-                <img src="images/budgets-create.png" width="560" height="1177" loading="lazy" alt="New budget sheet with Name, Applies to, Monthly limit, Roll unspent money into next month, and Hard cap">
-              </div>
-            </div>
-          </div>
-        </div>
-      </details>
-
-      <!-- 5. REPORTS -->
+      <!-- 2. REPORTS -->
       <details class="feature" id="reports">
         <summary>
           <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span>
           <span class="f-head">
-            <span class="f-num">05 — REPORTS</span>
+            <span class="f-num">02 — REPORTS</span>
             <span class="f-title">Numbers that actually explain themselves</span>
             <span class="f-teaser">Nine different ways to see the same money — a Sankey cash-flow, a treemap, trends, and more.</span>
           </span>
@@ -296,6 +204,98 @@
             <div class="phone"><img src="images/spending-by-category.png" width="560" height="1170" loading="lazy" alt="Spending by category report ranked biggest first"></div>
             <div class="phone"><img src="images/spending-by-tag.png" width="560" height="1170" loading="lazy" alt="Spending by tag report showing Goa trip, Reimbursable and Gifts"></div>
             <div class="phone"><img src="images/reports-list.png" width="560" height="1173" loading="lazy" alt="Full list of report types: Monthly trend, Top merchants, Spending by tag, Spending by account, Budget vs actual, Daily heatmap, Recurring vs one-off, Net-worth trend"></div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 3. LEDGER -->
+      <details class="feature" id="ledger">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 9h7M9 13h7M9 17h4"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">03 — LEDGER</span>
+            <span class="f-title">Every entry, three ways to look at it</span>
+            <span class="f-teaser">Day for today, Month for the running list, Year for the whole picture — one tap apart.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Day view for a single day, Month for the running list, Year for a month-by-month income/expense table.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Genuine multi-script support — log a payee in Hindi, Tamil, Arabic, or any script your keyboard offers.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Every row shows its category and sub-category — edit or delete inline, no extra screen.</li>
+            </ul>
+            <div class="shot-gallery">
+              <div class="phone"><img src="images/ledger-day.png" width="560" height="1180" loading="lazy" alt="Ledger Day view for Fri, Sep 18, 2026 showing three entries including a Hindi payee"></div>
+              <div class="phone"><img src="images/ledger-month.png" width="560" height="1180" loading="lazy" alt="Ledger Month view for September 2026 listing entries with category and amount"></div>
+              <div class="phone"><img src="images/ledger-year.png" width="560" height="1176" loading="lazy" alt="Ledger Year view for 2026 showing income and expense totals per month"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 4. QUICK ENTRY -->
+      <details class="feature" id="quick-entry">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">04 — QUICK ENTRY</span>
+            <span class="f-title">Log it before you forget it</span>
+            <span class="f-teaser">A calculator for the amount, a searchable category tree, done in a few taps.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>A calculator-style amount field — never the system numeric keyboard, never a typo in the amount.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Categories load collapsed so the list stays short — search reveals a match instantly, wherever it's nested.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>One toggle between Expense and Income, same screen.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>If a category has more than one budget (see Envelope budgets below), you're asked which one this entry belongs to — right here, not later.</li>
+            </ul>
+            <div class="shot-gallery">
+              <div class="phone"><img src="images/quick-entry-expense.png" width="560" height="1183" loading="lazy" alt="New entry sheet set to Expense with a collapsible category list"></div>
+              <div class="phone"><img src="images/quick-entry-income.png" width="560" height="1183" loading="lazy" alt="New entry sheet set to Income showing Salary, Business, Interest / Dividends, Refunds, Other Income and One-off / Windfall"></div>
+            </div>
+          </div>
+        </div>
+      </details>
+
+      <!-- 5. BUDGETS -->
+      <details class="feature" id="budgets">
+        <summary>
+          <span class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l7 4"/></svg></span>
+          <span class="f-head">
+            <span class="f-num">05 — BUDGETS</span>
+            <span class="f-title">Every rupee has a job</span>
+            <span class="f-teaser">Caps, rollovers, hard limits, nested sub-budgets — and two caps on one category when you need it.</span>
+          </span>
+          <span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+        </summary>
+        <div class="f-body">
+          <div class="f-content">
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Rollover budgets carry unspent money into next month automatically.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Hard caps warn you before an entry would breach the limit.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Nest sub-budgets under a parent — "Transport" as a whole, "Fuel" tracked underneath it.</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><strong style="color: var(--ink)">Envelope budgets</strong> — need Bike petrol and Car petrol tracked separately, even though both are "Fuel"? Give the category two budgets. Each one paces independently.</li>
+            </ul>
+            <div>
+              <div class="phone">
+                <img id="budgets-shot" src="images/budgets-dark.png" width="560" height="1179" loading="lazy" alt="Budgets screen showing Monthly plan, Housing & bills, Eating out & groceries, and Transport with Car petrol / Bike petrol envelope budgets">
+              </div>
+              <div class="shot-toggle" data-shot-toggle="budgets-shot">
+                <div class="seg">
+                  <button type="button" data-src="images/budgets-dark.png" aria-pressed="true">Vault Aurora</button>
+                  <button type="button" data-src="images/budgets-light.png" aria-pressed="false">Ledger Ink</button>
+                </div>
+              </div>
+              <p class="f-note">Creating a budget takes one sheet — name, category, monthly limit, rollover and hard-cap switches:</p>
+              <div class="phone shot-single" style="margin-top: 12px;">
+                <img src="images/budgets-create.png" width="560" height="1177" loading="lazy" alt="New budget sheet with Name, Applies to, Monthly limit, Roll unspent money into next month, and Hard cap">
+              </div>
+            </div>
           </div>
         </div>
       </details>
@@ -355,30 +355,19 @@
     </div>
   </section>
 
-  <!-- ======================================================= GUIDE-LEAD -->
-  <section>
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Before you install anything</span>
-        <h2 style="font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 14px;">See exactly what you're getting — the same depth that's built into the app itself.</h2>
-        <p style="font-size: 1.03rem;">Every screen above also has a full, exhaustive walkthrough right inside ExpensO (Settings → App guide → Step by step info). We've put that same walkthrough here, topic by topic, so there's nothing to discover after you install — only after you decide to.</p>
-      </div>
-      <div class="phone phone-lg">
-        <img src="images/in-app-guide.png" width="560" height="1171" loading="lazy" alt="How ExpensO works — in-app guide, slide 1 of 10, Everything at a glance, with a Step by step info button">
-      </div>
-    </div>
-  </section>
-
   <!-- ========================================================= GUIDE-Z -->
   <section id="guide" class="guide-zone">
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">The full step-by-step guide</span>
-        <h2>Ten topics. Every one of them exhaustive.</h2>
+        <h2>See exactly what you're getting — the same depth that's built into the app itself.</h2>
         <p>This is the manual, not the pitch — practical, in order, written for the first time you actually sit down and set this up.</p>
       </div>
 
-      <details class="guide-item" open>
+      <div class="guide-layout">
+      <div class="guide-list">
+
+      <details class="guide-item">
         <summary><span class="g-num">1</span> Setting up your accounts<span class="chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span></summary>
         <div class="guide-body">
           <p>Open <strong>Budgets → Accounts</strong> (or you'll be prompted the first time you add an entry). Add one account per real place your money sits — a bank account, a wallet of cash, a credit card. For each one, set:</p>
@@ -527,6 +516,14 @@
           <p>Under <strong>Settings → Security</strong>: turn on <strong>Biometric app lock</strong> to require your fingerprint, face, or device PIN every time ExpensO opens. Your data is encrypted on-device either way — this adds a lock on the door on top of that. Financial screens are also screenshot-blocked by default, so they never appear in your recent-apps thumbnail or in an accidental screenshot.</p>
         </div>
       </details>
+
+      </div>
+      <div class="guide-visual">
+        <div class="phone phone-lg">
+          <img src="images/in-app-guide.png" width="560" height="1171" loading="lazy" alt="How ExpensO works — in-app guide, slide 1 of 10, Everything at a glance, with a Step by step info button">
+        </div>
+      </div>
+      </div>
 
     </div>
   </section>

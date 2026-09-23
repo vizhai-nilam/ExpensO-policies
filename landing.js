@@ -21,9 +21,9 @@
   if (toggle) {
     toggle.addEventListener('click', function () {
       var current = root.getAttribute('data-theme');
-      var prefersLight = window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: light)').matches;
-      var effectiveIsLight = current ? current === 'light' : prefersLight;
+      var prefersDark = window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var effectiveIsLight = current ? current === 'light' : !prefersDark;
       var next = effectiveIsLight ? 'dark' : 'light';
       root.setAttribute('data-theme', next);
       safeSet('expenso-theme', next);

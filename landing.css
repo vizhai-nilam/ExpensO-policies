@@ -5,23 +5,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
-  /* dark (default) */
-  --ground: #0a0f0d;
-  --ground-2: #0e1613;
-  --surface: #121b18;
-  --surface-2: #182420;
-  --border: rgba(210, 230, 222, 0.10);
-  --border-strong: rgba(210, 230, 222, 0.18);
-  --ink: #eef5f1;
-  --ink-dim: #a9bdb5;
-  --ink-faint: #74897f;
-  --accent: #5fe3c0;
-  --accent-ink: #04211a;
-  --accent-soft: rgba(95, 227, 192, 0.14);
-  --brass: #e8b872;
-  --brass-soft: rgba(232, 184, 114, 0.14);
-  --danger: #f0857d;
-  --shadow: 0 20px 60px rgba(0,0,0,0.45);
+  /* light (default) */
+  --ground: #f3f6f4;
+  --ground-2: #eaf1ee;
+  --surface: #ffffff;
+  --surface-2: #f2f7f5;
+  --border: rgba(20, 40, 34, 0.10);
+  --border-strong: rgba(20, 40, 34, 0.18);
+  --ink: #131c18;
+  --ink-dim: #4c5c55;
+  --ink-faint: #7c8b84;
+  --accent: #0f7c62;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(15, 124, 98, 0.10);
+  --brass: #a15a1e;
+  --brass-soft: rgba(161, 90, 30, 0.10);
+  --danger: #b3453b;
+  --shadow: 0 20px 50px rgba(20, 40, 34, 0.12);
   --radius-lg: 22px;
   --radius-md: 16px;
   --radius-sm: 10px;
@@ -30,24 +30,24 @@
   --max: 1120px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --ground: #f3f6f4;
-    --ground-2: #eaf1ee;
-    --surface: #ffffff;
-    --surface-2: #f2f7f5;
-    --border: rgba(20, 40, 34, 0.10);
-    --border-strong: rgba(20, 40, 34, 0.18);
-    --ink: #131c18;
-    --ink-dim: #4c5c55;
-    --ink-faint: #7c8b84;
-    --accent: #0f7c62;
-    --accent-ink: #ffffff;
-    --accent-soft: rgba(15, 124, 98, 0.10);
-    --brass: #a15a1e;
-    --brass-soft: rgba(161, 90, 30, 0.10);
-    --danger: #b3453b;
-    --shadow: 0 20px 50px rgba(20, 40, 34, 0.12);
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0a0f0d;
+    --ground-2: #0e1613;
+    --surface: #121b18;
+    --surface-2: #182420;
+    --border: rgba(210, 230, 222, 0.10);
+    --border-strong: rgba(210, 230, 222, 0.18);
+    --ink: #eef5f1;
+    --ink-dim: #a9bdb5;
+    --ink-faint: #74897f;
+    --accent: #5fe3c0;
+    --accent-ink: #04211a;
+    --accent-soft: rgba(95, 227, 192, 0.14);
+    --brass: #e8b872;
+    --brass-soft: rgba(232, 184, 114, 0.14);
+    --danger: #f0857d;
+    --shadow: 0 20px 60px rgba(0,0,0,0.45);
   }
 }
 
@@ -164,12 +164,12 @@ header.site .bar {
 }
 .theme-toggle:hover { border-color: var(--border-strong); }
 .theme-toggle svg { width: 18px; height: 18px; }
-.theme-toggle .i-sun { display: none; }
-:root[data-theme="light"] .theme-toggle .i-sun { display: block; }
-:root[data-theme="light"] .theme-toggle .i-moon { display: none; }
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) .theme-toggle .i-sun { display: block; }
-  :root:not([data-theme="dark"]) .theme-toggle .i-moon { display: none; }
+.theme-toggle .i-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .i-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .i-moon { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .i-sun { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle .i-moon { display: block; }
 }
 
 /* -------------------------------------------------------------- buttons */
@@ -316,6 +316,13 @@ section.no-border { border-top: none; }
 
 /* ----------------------------------------------------------------- guide */
 .guide-zone { background: var(--surface-2); }
+.guide-layout { display: grid; grid-template-columns: 1fr 300px; gap: 40px; align-items: start; }
+.guide-list { min-width: 0; }
+.guide-visual { position: sticky; top: 96px; }
+@media (max-width: 900px) {
+  .guide-layout { grid-template-columns: 1fr; }
+  .guide-visual { position: static; order: -1; max-width: 240px; margin: 0 auto 28px; }
+}
 .guide-item {
   border: 1px solid var(--border); border-radius: var(--radius-md); background: var(--surface);
   margin-bottom: 12px; overflow: hidden;
