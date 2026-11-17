@@ -67,52 +67,21 @@ var sb=g('expenso-sb');if((sb==='rail'||sb==='hidden')&&window.innerWidth>900)r.
   <main id="main" class="page">
 <div class="doc-head"><span class="eyebrow">Legal</span></div>
 <div class="doc-layout" style="padding-top:0">
-<article class="doc"><h1>Data Deletion</h1>
-  
-  <p class="meta"><strong>App:</strong> ExpensO - The Expense Organiser &nbsp;·&nbsp; <strong>Effective:</strong> 2026-08-31</p>
-
-  <p>ExpensO - The Expense Organiser stores your data on your device and has no server-side account. There is
-  nothing for the developer to delete on your behalf, because the developer holds
-  none of your data. You delete everything yourself, in seconds.</p>
-
-  <h2 id="erase-everything-inside-the-app">1. Erase everything inside the app</h2>
-  <ol>
-    <li>Open <strong>ExpensO - The Expense Organiser → Settings</strong>.</li>
-    <li>Tap <strong>Erase everything</strong>.</li>
-    <li>Confirm, and pass the biometric / device-credential check.</li>
-  </ol>
-  <p>This wipes every transaction, budget, savings goal, recurring rule, attachment,
-  and setting, deletes this device's local sync log, and <strong>destroys the encryption
-  keys</strong> in the secure hardware. It cannot be undone.</p>
-
-  <h2 id="remove-the-app">2. Remove the app</h2>
-  <p>Uninstall ExpensO - The Expense Organiser from your device. On Android this also removes the app's
-  private, encrypted storage.</p>
-
-  <h2 id="if-you-used-encrypted-cloud-sync">3. If you used encrypted cloud sync</h2>
-  <p>The encrypted sync files live in <strong>your own</strong> Google Drive, in a private
-  application-data folder.</p>
-  <ol>
-    <li>Go to <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-    <li>Select <strong>ExpensO - The Expense Organiser</strong> and choose <strong>Remove access</strong>. This also deletes the
-      app-data folder ExpensO - The Expense Organiser created.</li>
-    <li>Optionally, before revoking, use ExpensO - The Expense Organiser → Settings → <strong>Export all my data</strong>
-      if you want a copy first.</li>
-  </ol>
-
-  <h2 id="if-you-used-wi-fi-peer-to-peer-sync">4. If you used Wi-Fi peer-to-peer sync</h2>
-  <p>Peer-to-peer sync writes only to your other devices. Repeat steps 1–2 on each
-  device to erase its copy.</p>
-
-  <h2 id="nothing-else-exists">5. Nothing else exists</h2>
-  <p>ExpensO - The Expense Organiser has no analytics store, no backups, no logs, and no third-party
-  processors holding your data. After steps 1–4 no copy of your ExpensO - The Expense Organiser data
-  remains anywhere.</p>
-
-  
-
+<article class="doc"><h1>Data deletion</h1><p class="meta"><strong>App:</strong> ExpensO - The Expense Organiser &nbsp;·&nbsp; <strong>Effective:</strong> 2026-11-18</p>
+<p>ExpensO - The Expense Organiser stores your data on your device and has no server-side account. There is nothing for the developer to delete on your behalf, because the developer holds none of your data. You delete everything yourself, in seconds.</p>
+<h2 id="erase-everything-inside-the-app">1. Erase everything inside the app</h2>
+<ol><li>Open <strong>ExpensO - The Expense Organiser → Settings</strong>.</li><li>Tap <strong>Erase everything</strong>.</li><li>Confirm, and pass the biometric / device-credential check.</li></ol>
+<p>This wipes every transaction, budget, savings goal, recurring rule, attachment, and setting, deletes this device's local sync log, and <strong>destroys the encryption keys</strong> in the secure hardware. It cannot be undone.</p>
+<p>If you use cloud sync, this step <strong>deliberately does not delete</strong> the rotating backup snapshots in your own Google Drive (see step 3) — they are your own protected data, kept so you can still recover your history afterward if you change your mind.</p>
+<h2 id="remove-the-app">2. Remove the app</h2>
+<p>Uninstall ExpensO - The Expense Organiser from your device. On Android this also removes the app's private, encrypted storage.</p>
+<h2 id="if-you-used-encrypted-cloud-sync">3. If you used encrypted cloud sync</h2>
+<p>The encrypted sync files — the change log <strong>and</strong> the rotating backup snapshots — live in <strong>your own</strong> Google Drive, in a private application-data folder.</p>
+<ol><li>Go to <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a>.</li><li>Select <strong>ExpensO - The Expense Organiser</strong> and choose <strong>Remove access</strong>. This also deletes the entire app-data folder ExpensO - The Expense Organiser created — change log and every backup snapshot.</li><li>Optionally, before revoking, use ExpensO - The Expense Organiser → Settings → <strong>Export all my data</strong> if you want a copy first, or Settings → Data management → Google Drive Backup → <strong>Backup now</strong> if you want one more up-to-date snapshot kept.</li></ol>
+<h2 id="nothing-else-exists">4. Nothing else exists</h2>
+<p>ExpensO - The Expense Organiser has no analytics store, no logs, and no third-party processors holding your data. The only copies anywhere are the ones <strong>you</strong> chose to create (cloud sync / backup to your own Google Drive, or an export file you saved). After steps 1–3 no copy of your ExpensO - The Expense Organiser data remains anywhere.</p>
 <p style="margin-top:2.4em">&larr; <a href="index.html">Back to ExpensO</a></p></article>
-<aside class="toc" aria-label="On this page"><h5>On this page</h5><a href="#erase-everything-inside-the-app">1. Erase everything inside the app</a><a href="#remove-the-app">2. Remove the app</a><a href="#if-you-used-encrypted-cloud-sync">3. If you used encrypted cloud sync</a><a href="#if-you-used-wi-fi-peer-to-peer-sync">4. If you used Wi-Fi peer-to-peer sync</a><a href="#nothing-else-exists">5. Nothing else exists</a></aside>
+<aside class="toc" aria-label="On this page"><h5>On this page</h5><a href="#erase-everything-inside-the-app">1. Erase everything inside the app</a><a href="#remove-the-app">2. Remove the app</a><a href="#if-you-used-encrypted-cloud-sync">3. If you used encrypted cloud sync</a><a href="#nothing-else-exists">4. Nothing else exists</a></aside>
 </div>
   <footer class="site-foot">
     <div class="container">

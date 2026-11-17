@@ -68,68 +68,16 @@ var sb=g('expenso-sb');if((sb==='rail'||sb==='hidden')&&window.innerWidth>900)r.
 <div class="doc-head"><span class="eyebrow">Legal</span></div>
 <div class="doc-layout" style="padding-top:0">
 <article class="doc"><h1>Before you start</h1>
-  
-  <p class="meta">The plain-language summary shown inside the app on first launch.</p>
-
-  <p><strong>ExpensO - The Expense Organiser</strong> keeps your money data <strong>on your device</strong>, in an <strong>encrypted</strong>
-  database. There is <strong>no ExpensO account and no ExpensO server</strong> — the developer
-  never sees your entries.</p>
-
-  <h2 id="what-this-means">What this means</h2>
-  <ul>
-    <li><strong>Private by default.</strong> Nothing you enter leaves your device unless you turn on
-      a sync feature yourself. Your transactions, balances and attachments are never
-      sent to any advertising or analytics system.</li>
-    <li><strong>The free version is ad-supported.</strong> ExpensO shows ads through <strong>Google
-      AdMob</strong>, and only after you answer the Google consent prompt (and, on iOS, the
-      Apple tracking prompt). For ads, Google may use an advertising ID, your IP
-      address (for a rough city-level location) and ad-interaction data — never your
-      financial data. You can change these choices any time in <strong>Settings → "Ad
-      privacy choices"</strong>.</li>
-    <li><strong>One-time "ExpensO Full" removes every ad.</strong> When you buy it, the ad software
-      is never started — no ad requests, no advertising ID, nothing.</li>
-    <li><strong>No first-party tracking.</strong> ExpensO itself has no analytics, no telemetry and
-      no crash-reporting for the developer.</li>
-    <li><strong>You hold the keys.</strong> The encryption keys live only in your device's secure
-      hardware. If you erase the app or lose the device, <strong>your data cannot be
-      recovered by anyone</strong> — keep your own backups (Export, or encrypted sync to
-      your own Google Drive).</li>
-    <li><strong>Not financial advice.</strong> ExpensO shows you what you enter. It does not advise
-      you on money decisions.</li>
-  </ul>
-
-  <h2 id="who-can-receive-data">Who can receive data</h2>
-  <table>
-    <tr><th>Recipient</th><th>When</th><th>What</th></tr>
-    <tr><td><strong>Google AdMob</strong> (+ ad partners)</td><td>Free tier, after consent</td><td>Advertising ID, IP address (&rarr; coarse location), device/app info, ad-interaction events. No financial data.</td></tr>
-    <tr><td><strong>Google Play / Apple App Store</strong></td><td>If you buy ExpensO Full</td><td>Your purchase, handled under the store's own terms. The developer never sees your payment details.</td></tr>
-    <tr><td><strong>Your own Google Drive</strong></td><td>If you turn on cloud sync</td><td>Ciphertext change-log + your Google email to bind the files.</td></tr>
-    <tr><td><strong>Your other devices</strong></td><td>If you use Wi-Fi sync</td><td>Ciphertext change-log over your local network only.</td></tr>
-    <tr><td>A currency-rates provider</td><td>If you turn on online rates</td><td>A request for public rates over HTTPS. No account data.</td></tr>
-  </table>
-
-  <h2 id="permissions-expenso-may-ask-for">Permissions ExpensO may ask for</h2>
-  <p>Camera (scan pairing QR, capture receipts) · Local network (find your other
-  devices) · Biometrics (unlock, confirm export/erase) · Notifications and alarms
-  (bill reminders) · Advertising ID (serve ads on the free tier) · Internet.</p>
-
-  <h2 id="your-choices">Your choices</h2>
-  <ul>
-    <li>Buy <strong>ExpensO Full</strong> to remove all ads.</li>
-    <li>Change <strong>ad consent</strong> in Settings → "Ad privacy choices"; on iOS also in the
-      system Tracking settings. Reset the advertising ID in your device settings.</li>
-    <li>Turn sync and exchange rates on or off any time in <strong>Settings</strong>.</li>
-    <li><strong>Export</strong> everything as JSON + CSV from Settings.</li>
-    <li><strong>Erase everything</strong> (data + keys) from Settings.</li>
-    <li>Read the full <a href="terms.html">Terms &amp; Conditions</a> and <a href="privacy.html">Privacy Policy</a> any time under
-      <strong>Settings → Legal</strong>.</li>
-  </ul>
-
-  <p>By continuing you confirm you have read this summary and you agree to the
-  <a href="terms.html">Terms &amp; Conditions</a> and the <a href="privacy.html">Privacy Policy</a>.</p>
-
-  
-
+<p><strong>ExpensO - The Expense Organiser</strong> keeps your money data <strong>on your device</strong>, in an <strong>encrypted</strong> database. There is <strong>no ExpensO account and no ExpensO server</strong> — the developer never sees your entries.</p>
+<h2 id="what-this-means">What this means</h2>
+<ul><li><strong>Private by default.</strong> Nothing you enter leaves your device unless you turn on a sync feature yourself. Your transactions, balances and attachments are never sent to any advertising or analytics system.</li><li><strong>Free, with possible ads in future.</strong> ExpensO shows no ads today. It includes support for <strong>Google AdMob</strong>, so ads may appear in a future version — and only after you answer the Google consent prompt. If that happens, Google may use an advertising ID, your IP address (for a rough city-level location) and ad-interaction data — never your financial data.</li><li><strong>No first-party tracking.</strong> ExpensO itself has no analytics, no telemetry and no crash-reporting for the developer.</li><li><strong>You hold the keys.</strong> The encryption keys live only in your device's secure hardware. If you erase the app or lose the device, <strong>your data cannot be recovered by anyone</strong> — keep your own backups (Export, or encrypted sync to your own Google Drive).</li><li><strong>Not financial advice.</strong> ExpensO shows you what you enter. It does not advise you on money decisions.</li></ul>
+<h2 id="who-can-receive-data">Who can receive data</h2>
+<table><thead><tr><th>Recipient</th><th>When</th><th>What</th></tr></thead><tbody><tr><td><strong>Google AdMob</strong> (+ ad partners)</td><td>Only if ads are enabled in a future version, after consent</td><td>Advertising ID, IP address (→ coarse location), device/app info, ad-interaction events. No financial data.</td></tr><tr><td><strong>Your own Google Drive</strong></td><td>If you turn on cloud sync</td><td>Ciphertext change-log + your Google email to bind the files, plus a rotating set of ciphertext full-backup snapshots (up to twice a day, ~14 kept).</td></tr><tr><td><strong>A currency-rates provider</strong></td><td>If you turn on online rates</td><td>A request for public rates over HTTPS. No account data.</td></tr></tbody></table>
+<h2 id="permissions-expenso-may-ask-for">Permissions ExpensO may ask for</h2>
+<p>Camera (capture receipts) · Biometrics (unlock, confirm export/erase) · Notifications and alarms (bill reminders) · Internet (Drive sync, exchange rates) · Advertising ID (declared for possible future ads; not read while ads are off).</p>
+<h2 id="your-choices">Your choices</h2>
+<ul><li>Turn cloud sync and exchange rates on or off any time in <strong>Settings</strong>.</li><li><strong>Export</strong> everything as JSON + CSV from Settings.</li><li><strong>Erase everything</strong> (data + keys) from Settings.</li><li>Read the full <strong>Privacy Policy</strong> and <strong>Terms &amp; Conditions</strong> any time under <strong>Settings → Legal</strong>.</li></ul>
+<p>By continuing you confirm you have read this summary and you agree to the <strong>Terms &amp; Conditions</strong> and the <strong>Privacy Policy</strong>.</p>
 <p style="margin-top:2.4em">&larr; <a href="index.html">Back to ExpensO</a></p></article>
 <aside class="toc" aria-label="On this page"><h5>On this page</h5><a href="#what-this-means">What this means</a><a href="#who-can-receive-data">Who can receive data</a><a href="#permissions-expenso-may-ask-for">Permissions ExpensO may ask for</a><a href="#your-choices">Your choices</a></aside>
 </div>
