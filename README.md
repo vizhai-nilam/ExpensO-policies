@@ -4,13 +4,13 @@ Static, dependency-free HTML pages for ExpensO - The Expense Organiser's legal
 documents, meant to be hosted with **GitHub Pages** and linked from the Play
 Console.
 
-- `index.html` — landing page linking to all four documents
+- `index.html` — the product site: Personal & Business features, reports, themes, security, guide, plans, FAQ
 - `privacy.html` — Privacy Policy (the URL Play Console needs)
 - `terms.html` — Terms & Conditions
 - `data-deletion.html` — Data Deletion instructions (the URL Play Console's
   "Data safety" section needs)
 - `disclosures.html` — the first-run in-app disclosure summary
-- `style.css` — shared styling, no external fonts or scripts
+- `site.css` / `site.js` — shared dual-tone design system (left sidebar + themed cards), theme picker, display size. System fonts only; no external requests, no analytics
 
 These mirror `documentation/legal/*.md` in the main ExpensO repo. If those
 change, regenerate these pages to match and bump the version/date shown at

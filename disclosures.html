@@ -1,34 +1,81 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="classic-light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>First-run Disclosures — ExpensO</title>
-<meta name="description" content="The plain-language summary shown in ExpensO before you start using it.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="The first-run in-app disclosure summary for ExpensO.">
+<meta name="theme-color" content="#E9EFFA">
+
+<link rel="icon" type="image/png" href="images/app-icon.png">
+<link rel="apple-touch-icon" href="images/app-icon.png">
+<link rel="stylesheet" href="site.css">
+<script>
+(function(){var r=document.documentElement,g=function(k){try{return localStorage.getItem(k)}catch(e){return null}};
+var p=g('expenso-theme')||'classic-light',ok={system:1,'classic-light':1,'classic-dark':1};
+if(!ok[p])p='classic-light';var t=p;
+if(p==='system')t=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'classic-dark':'classic-light';
+r.setAttribute('data-theme',t);r.setAttribute('data-pref',p);
+var s=g('expenso-size');if(s)r.setAttribute('data-size',s);
+var sb=g('expenso-sb');if((sb==='rail'||sb==='hidden')&&window.innerWidth>900)r.setAttribute('data-sb',sb);})();
+</script>
 </head>
 <body>
-<header class="site">
-  <div class="wrap">
-    <a class="brand" href="index.html"><span class="mark">eO</span> ExpensO Legal</a>
-    <nav class="docs">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="data-deletion.html">Data Deletion</a>
-      <a href="disclosures.html" class="active">First-run Disclosures</a>
-    </nav>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></symbol><symbol id="i-ledger" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 9h7M9 13h7M9 17h4"/></symbol><symbol id="i-budgets" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l7 4"/></symbol><symbol id="i-reports" viewBox="0 0 24 24"><path d="M4 20V10M12 20V4M20 20v-7"/></symbol><symbol id="i-savings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r=".9" fill="currentColor" stroke="none"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2" fill="var(--sb-bg, var(--card))"/><circle cx="16" cy="12" r="2" fill="var(--sb-bg, var(--card))"/><circle cx="11" cy="18" r="2" fill="var(--sb-bg, var(--card))"/></symbol><symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></symbol><symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol><symbol id="i-invoice" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h5"/></symbol><symbol id="i-box" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M16.5 14.2A5.5 5.5 0 0 1 21.5 20"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6z"/><path d="M9 12l2 2 4-4"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol><symbol id="i-lock-closed" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.4"/></symbol><symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><path d="M3 3l18 18"/></symbol><symbol id="i-sync" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14-4M4 4v4h4M4 13a8 8 0 0 0 14 4M20 20v-4h-4"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 19h16"/></symbol><symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 21V9"/><path d="M7 14l5-5 5 5"/><path d="M4 4h16"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol><symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-.8 2-1.8 0-.5-.2-.9-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1 .8-1.8 1.8-1.8H17a4 4 0 0 0 4-4c0-4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="14.5" cy="7" r="1"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H3zM21 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></symbol><symbol id="i-legal" viewBox="0 0 24 24"><path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></symbol><symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></symbol><symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/></symbol><symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r=".8" fill="currentColor"/><path d="M3 3l18 18"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol><symbol id="i-panel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19"/></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1"/></symbol><symbol id="i-repeat" viewBox="0 0 24 24"><path d="M17 2l4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4M21 13v2a3 3 0 0 1-3 3H3"/></symbol><symbol id="i-paperclip" viewBox="0 0 24 24"><path d="M20 12l-7.5 7.5a5 5 0 0 1-7-7L13 5a3.3 3.3 0 0 1 5 5l-7.5 7.5a1.7 1.7 0 0 1-2.4-2.4L15 8"/></symbol><symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16.5" cy="13.5" r="1"/></symbol><symbol id="i-server" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="5" rx="1.5"/><rect x="4" y="10" width="16" height="5" rx="1.5"/><rect x="4" y="16" width="16" height="4" rx="1.5"/></symbol><symbol id="i-fingerprint" viewBox="0 0 24 24"><path d="M6 11a6 6 0 0 1 12 0v2a14 14 0 0 1-2 7M9 20c1-2 1.5-4.5 1.5-7a1.5 1.5 0 0 1 3 0c0 3-.5 5.5-2 8M3 14c.5-2 .5-4 .5-5a8.5 8.5 0 0 1 17 0"/></symbol><symbol id="i-no-shot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></symbol><symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 11v3a1 1 0 0 0 1 1h3l8 4V6L7 10H4a1 1 0 0 0-1 1zM18 9a4 4 0 0 1 0 6"/></symbol><symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></symbol><symbol id="i-chevrons" viewBox="0 0 24 24"><path d="M7 6l6 6-6 6M13 6l6 6-6 6"/></symbol><symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4.5 4.5 0 0 1-.4-9A6 6 0 0 1 18 10a4 4 0 0 1-.5 8z"/></symbol></defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Site navigation">
+  <div class="sb-head">
+    <a class="sb-brand" href="index.html#top" title="ExpensO"><img src="images/app-icon.png" width="34" height="34" alt=""><span class="sb-label">ExpensO</span></a>
+    <button class="sb-collapse" id="sb-collapse" type="button" aria-label="Collapse the menu" title="Collapse menu"><svg class="ico" aria-hidden="true"><use href="#i-panel"/></svg></button>
   </div>
-</header>
-
-<div class="wrap">
-  <h1>Before you start</h1>
+  <nav class="sb-nav">
+<p class="sb-group sb-label">Product</p>
+<a class="sb-link" href="index.html#top" title="Overview"><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg><span class="sb-label">Overview</span></a>
+<a class="sb-link" href="index.html#personal" title="Personal"><svg class="ico" aria-hidden="true"><use href="#i-wallet"/></svg><span class="sb-label">Personal</span></a>
+<a class="sb-link" href="index.html#business" title="Business"><svg class="ico" aria-hidden="true"><use href="#i-briefcase"/></svg><span class="sb-label">Business</span><span class="tag">Soon</span></a>
+<a class="sb-link" href="index.html#reports" title="Reports"><svg class="ico" aria-hidden="true"><use href="#i-reports"/></svg><span class="sb-label">Reports</span></a>
+<p class="sb-group sb-label">Experience</p>
+<a class="sb-link" href="index.html#themes" title="Themes"><svg class="ico" aria-hidden="true"><use href="#i-palette"/></svg><span class="sb-label">Themes</span></a>
+<a class="sb-link" href="index.html#security" title="Security"><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><span class="sb-label">Security</span></a>
+<a class="sb-link" href="index.html#data" title="Sync &amp; data"><svg class="ico" aria-hidden="true"><use href="#i-sync"/></svg><span class="sb-label">Sync &amp; data</span></a>
+<p class="sb-group sb-label">Learn</p>
+<a class="sb-link" href="index.html#guide" title="Guide"><svg class="ico" aria-hidden="true"><use href="#i-book"/></svg><span class="sb-label">Guide</span></a>
+<a class="sb-link" href="index.html#downloads" title="Demo data"><svg class="ico" aria-hidden="true"><use href="#i-download"/></svg><span class="sb-label">Demo data</span></a>
+<a class="sb-link" href="index.html#faq" title="FAQ"><svg class="ico" aria-hidden="true"><use href="#i-help"/></svg><span class="sb-label">FAQ</span></a>
+<p class="sb-group sb-label">Legal</p>
+<a class="sb-link" href="privacy.html" title="Privacy Policy"><svg class="ico" aria-hidden="true"><use href="#i-lock-closed"/></svg><span class="sb-label">Privacy Policy</span></a>
+<a class="sb-link" href="terms.html" title="Terms &amp; Conditions"><svg class="ico" aria-hidden="true"><use href="#i-legal"/></svg><span class="sb-label">Terms &amp; Conditions</span></a>
+<a class="sb-link" href="data-deletion.html" title="Data Deletion"><svg class="ico" aria-hidden="true"><use href="#i-trash"/></svg><span class="sb-label">Data Deletion</span></a>
+<a class="sb-link active" aria-current="page" href="disclosures.html" title="First-run Disclosures"><svg class="ico" aria-hidden="true"><use href="#i-megaphone"/></svg><span class="sb-label">First-run Disclosures</span></a>
+  </nav>
+  <div class="sb-foot">
+    <a class="sb-cta" href="https://play.google.com/store/apps/details?id=com.expenso.expenso" title="Get it on Google Play"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span class="sb-label">Get the app</span></a>
+    <p class="sb-note sb-label">Free · Android 12+ · No account</p>
+  </div>
+</aside>
+<button class="sb-tab" id="sb-tab" type="button" aria-label="Open or close the menu" title="Pull to open or close the menu"><svg class="ico" aria-hidden="true"><use href="#i-chevrons"/></svg></button>
+<div class="scrim" id="scrim"></div>
+<div class="main">
+  <header class="topbar">
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sidebar"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <div class="crumb"><span>ExpensO</span><span class="sep" aria-hidden="true">/</span><strong id="crumb-current">First-run Disclosures</strong></div>
+    <span class="top-spacer"></span>
+    <div class="theme-dots" role="group" aria-label="Theme"><button type="button" data-set-theme="system" aria-pressed="false" title="System" aria-label="System theme"><i class="sw-system"></i></button><button type="button" data-set-theme="classic-light" aria-pressed="false" title="Light" aria-label="Light theme"><i class="sw-light"></i></button><button type="button" data-set-theme="classic-dark" aria-pressed="false" title="Dark" aria-label="Dark theme"><i class="sw-dark"></i></button></div>
+    <a class="top-cta" href="https://play.google.com/store/apps/details?id=com.expenso.expenso"><svg class="ico" aria-hidden="true"><use href="#i-play"/></svg><span>Get the app</span></a>
+  </header>
+  <main id="main" class="page">
+<div class="doc-head"><span class="eyebrow">Legal</span></div>
+<div class="doc-layout" style="padding-top:0">
+<article class="doc"><h1>Before you start</h1>
+  
   <p class="meta">The plain-language summary shown inside the app on first launch.</p>
 
   <p><strong>ExpensO - The Expense Organiser</strong> keeps your money data <strong>on your device</strong>, in an <strong>encrypted</strong>
   database. There is <strong>no ExpensO account and no ExpensO server</strong> — the developer
   never sees your entries.</p>
 
-  <h2>What this means</h2>
+  <h2 id="what-this-means">What this means</h2>
   <ul>
     <li><strong>Private by default.</strong> Nothing you enter leaves your device unless you turn on
       a sync feature yourself. Your transactions, balances and attachments are never
@@ -51,7 +98,7 @@
       you on money decisions.</li>
   </ul>
 
-  <h2>Who can receive data</h2>
+  <h2 id="who-can-receive-data">Who can receive data</h2>
   <table>
     <tr><th>Recipient</th><th>When</th><th>What</th></tr>
     <tr><td><strong>Google AdMob</strong> (+ ad partners)</td><td>Free tier, after consent</td><td>Advertising ID, IP address (&rarr; coarse location), device/app info, ad-interaction events. No financial data.</td></tr>
@@ -61,12 +108,12 @@
     <tr><td>A currency-rates provider</td><td>If you turn on online rates</td><td>A request for public rates over HTTPS. No account data.</td></tr>
   </table>
 
-  <h2>Permissions ExpensO may ask for</h2>
+  <h2 id="permissions-expenso-may-ask-for">Permissions ExpensO may ask for</h2>
   <p>Camera (scan pairing QR, capture receipts) · Local network (find your other
   devices) · Biometrics (unlock, confirm export/erase) · Notifications and alarms
   (bill reminders) · Advertising ID (serve ads on the free tier) · Internet.</p>
 
-  <h2>Your choices</h2>
+  <h2 id="your-choices">Your choices</h2>
   <ul>
     <li>Buy <strong>ExpensO Full</strong> to remove all ads.</li>
     <li>Change <strong>ad consent</strong> in Settings → "Ad privacy choices"; on iOS also in the
@@ -81,9 +128,28 @@
   <p>By continuing you confirm you have read this summary and you agree to the
   <a href="terms.html">Terms &amp; Conditions</a> and the <a href="privacy.html">Privacy Policy</a>.</p>
 
-  <footer class="site">
-    <p>&larr; <a href="index.html">Back to ExpensO Legal</a></p>
-  </footer>
+  
+
+<p style="margin-top:2.4em">&larr; <a href="index.html">Back to ExpensO</a></p></article>
+<aside class="toc" aria-label="On this page"><h5>On this page</h5><a href="#what-this-means">What this means</a><a href="#who-can-receive-data">Who can receive data</a><a href="#permissions-expenso-may-ask-for">Permissions ExpensO may ask for</a><a href="#your-choices">Your choices</a></aside>
 </div>
+  <footer class="site-foot">
+    <div class="container">
+      <div class="foot-grid">
+        <div><a class="sb-brand" style="color:var(--ink)" href="index.html#top"><img src="images/app-icon.png" width="34" height="34" alt="" style="border-radius:10px"> ExpensO</a>
+          <p style="margin-top:10px">ExpensO — The Expense Organiser. Offline-first, end-to-end-encrypted personal and business finance, built for India.</p></div>
+        <div class="foot-cols">
+          <div><h5>Product</h5><a href="index.html#personal">Personal</a><a href="index.html#business">Business</a><a href="index.html#reports">Reports</a><a href="index.html#themes">Themes</a></div>
+          <div><h5>Trust</h5><a href="index.html#security">Security</a><a href="index.html#data">Sync &amp; data</a><a href="index.html#guide">Guide</a><a href="index.html#faq">FAQ</a></div>
+          <div><h5>Legal</h5><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="data-deletion.html">Data Deletion</a><a href="disclosures.html">First-run Disclosures</a></div>
+        </div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 ExpensO. An individual developer, based in India.</span><span>This site uses no analytics, no cookies and no third-party requests.</span></div>
+    </div>
+  </footer>
+  </main>
+</div>
+</div>
+<script src="site.js"></script>
 </body>
 </html>
